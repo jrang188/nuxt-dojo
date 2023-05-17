@@ -4,4 +4,18 @@ export default defineNuxtConfig({
     enabled: true,
   },
   modules: ["@nuxtjs/tailwindcss"],
+  app: {
+    head: {
+      title: "Nuxt Dojo",
+      meta: [
+        { name: "description", content: "fake ecommerce site built with nuxt" },
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
+      ],
+    },
+  },
 });
