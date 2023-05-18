@@ -19,10 +19,13 @@
       Distinctio, delectus sapiente adipisci assumenda obcaecati aliquid
       exercitationem sit ad autem! Veritatis nihil accusamus recusandae esse?
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { data } = useFetch("/api/ninja");
+</script>
 
 <style scoped>
 h2 {
